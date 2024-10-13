@@ -7,6 +7,7 @@ export default <Partial<Config>>{
 			'container': '#222634',
 			'header': '#CDE2F9',
 			"secondary": "#8E98A8",
+			"graytext": "#878B9B",
 			inherit: "inherit",
 			current: "currentColor",
 			transparent: "transparent",
