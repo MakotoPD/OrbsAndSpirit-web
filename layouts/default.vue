@@ -3,7 +3,9 @@
 
 		<header class="bg-container w-full py-4 px-12 rounded-3xl flex justify-between items-center mb-16">
 			<div class="flex gap-6 items-end">
-				<NuxtImg src="/logo/8bitjelly.svg" class="w-20 object-contain" />
+				<NuxtLink :to="localePath('/')">
+					<NuxtImg src="/logo/8bitjelly.svg" class="w-20 object-contain" />
+				</NuxtLink>
 				<select v-model="locale" class="h-fit text-white bg-secondary rounded-md">
 					<option class="text-white" value="en">en</option>
 					<option class="text-white" value="pl">pl</option>
@@ -11,9 +13,9 @@
 			</div>
 
 			<div class="flex gap-4 text-graytext">
-				<NuxtLink to="">{{ $t('menu.home') }}</NuxtLink>
-				<NuxtLink to="">{{ $t('menu.about') }}</NuxtLink>
-				<NuxtLink to="">{{ $t('menu.download') }}</NuxtLink>
+				<NuxtLink :to="localePath('/')">{{ $t('menu.home') }}</NuxtLink>
+				<NuxtLink :to="localePath('/')">{{ $t('menu.about') }}</NuxtLink>
+				<NuxtLink :to="localePath('/')">{{ $t('menu.download') }}</NuxtLink>
 			</div>
 		</header>
 

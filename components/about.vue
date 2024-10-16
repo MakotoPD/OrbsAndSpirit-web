@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-container py-12 px-20 rounded-3xl">
+	<div class="bg-container py-12 px-20 rounded-3xl mb-12">
 		<h2 class="text-4xl text-white font-semibold mb-4">{{ about.data.attributes.title }}</h2>
 		<p class="text-white/85 2xl:text-lg max-w-screen-xl">{{ about.data.attributes.desc }}</p>
 	</div>
@@ -20,8 +20,6 @@ let fetchAbout = async () => {
   )
   about.value = data.value
   isPendingAbout.value = pending.value
-
-  console.log(about.value)
 }
 
 await fetchAbout()
