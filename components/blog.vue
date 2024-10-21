@@ -5,7 +5,7 @@
 			<div v-if="isPendingBlog == 'pending'" class="bg-bg h-64 w-full rounded-xl relative"></div>
 			<div v-if="isPendingBlog == 'pending'" class="bg-bg h-64 w-full rounded-xl relative"></div>
 			<div v-if="isPendingBlog == 'pending'" class="bg-bg h-64 w-full rounded-xl relative"></div>
-			<NuxtLink :to="localePath('/blog/'+article.attributes.slug)" v-for="article in blog.data" class="bg-bg px-2 py-2 pb-8 rounded-xl relative">
+			<NuxtLink :to="localePath('/blog/'+article.attributes.slug)" v-for="article in blog.data" class="bg-bg px-2 py-2 pb-8 rounded-xl relative max-w-md">
 				<NuxtImg 
 					:src="'https://panel.8bitjelly.com'+ article.attributes.thumbnail.data.attributes.url" 
 					class="rounded-lg mb-4"

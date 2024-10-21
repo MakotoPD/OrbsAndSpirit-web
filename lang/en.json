@@ -4,5 +4,10 @@
 		"home": "Home",
 		"about": "About",
 		"download": "Download"
+	},
+	"page": {
+		"blogpost": {
+			"articles": "Read more"
+		}
 	}
 }
